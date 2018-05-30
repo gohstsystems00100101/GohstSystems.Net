@@ -1,12 +1,14 @@
 #headerArea
 {
+ color: white;
  position: fixed;
  top: 0;
  left: 0;
  height: 10%;
  width: 100%;
  background-color: #111112;
- border-bottom: 14px solid #00f;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
 }
 
 #headerArea ul 
@@ -20,14 +22,21 @@
 {
  float: left;
  list-style-type: none;
+  display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+}
+
+#headerArea li:hover
+{
+ color: skyBlue;
+ cursor: pointer;
 }
 
 #headerArea li a
 {
- display: inline-block;
  color: white;
- text-align: center;
- padding: 14px 16px;
  text-decoration: none;
 }
 
@@ -50,7 +59,7 @@
 #mainArea /*prev mainBodyDiv*/
 {
  position: fixed;
- top: 12%;
+ top: 10%;
  left: 0;
  height: 90%;
  width: 100%;
@@ -70,7 +79,8 @@
 
 #displayArea
 {
- background-color:rgba(255, 255, 255,0.9);
+ background-color:rgba(0, 0, 0,0.9);
+ color: white;
  position: absolute;
  top: 5%;
  left: 5%;
@@ -78,8 +88,7 @@
  width: 90%;
  border-radius: 5px;
  border: 3px solid blue;
- padding: 5px;
- 
+ padding: 5px; 
 }
 
 #navTabsArea
@@ -125,9 +134,9 @@
 #contentArea
 {
  position: absolute;
- top: 10%;
+ top: 0;
  left: 0;
- height: 90%;
+ height: 100%;
  width: 100%;
  background-repeat: no-repeat;
  background-size: 100% 100%;

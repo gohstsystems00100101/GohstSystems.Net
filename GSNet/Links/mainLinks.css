@@ -1,36 +1,55 @@
-#headerBarDiv
+table
+{
+ width: 100%;
+ text-align: center;
+ border-collapse: collapse;
+}
+
+td
+{
+ text-align: left;
+}
+
+table a
+{
+ text-decoration: none;
+ color: black;
+}
+
+#headerArea
 {
  position: fixed;
  top: 0;
  left: 0;
  height: 10%;
  width: 100%;
- background-color: white;
+ background-color: #111112;
+ border-bottom: 14px solid #00f;
 }
 
-#headerBarDiv ul 
+#headerArea ul
 {
  margin: 0;
  padding: 0;
  overflow: hidden;
 }
 
-#headerBarDiv li 
+#headerArea li
 {
  float: left;
  list-style-type: none;
 }
 
-#headerBarDiv li a
+#headerArea li a
 {
  display: inline-block;
- color: blue;
+ color: white;
  text-align: center;
  padding: 14px 16px;
  text-decoration: none;
 }
 
-#headerBarDiv li a:hover
+#headerArea li a:hover
 {
  color: skyBlue;
 }
@@ -46,61 +65,107 @@
 }
 
 
-#mainBodyDiv
+#mainArea /*prev mainBodyDiv*/
 {
  position: fixed;
- top: 10%;
+ top: 12%;
  left: 0;
  height: 90%;
  width: 100%;
  background-color: #748bfa;
- background-image: url("Resources/Images/waterBkgd.jpg"); 
- 
- background: url("Resources/Images/waterBkgd.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+ background-image: url("file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/mainBkgd.jpg");
+
+ background: url("file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/mainBkgd.jpg") repeat;
+        -webkit-background-size: repeat;
+        -moz-background-size: repeat;
+        -o-background-size: repeat;
+        background-size: repeat;
+
+ background-color:rgba(255, 255, 255,0.9);
+ background-repeat:no-repeat;
+ background-size:cover;
 }
 
-#sideNavBarDiv
+#displayArea
 {
- position: fixed;
- top: 15%;
+ background-color:rgba(255, 255, 255,0.9);
+ position: absolute;
+ top: 5%;
  left: 5%;
- height: 80%;
- width: 15%;
- background-color: white;
- background-repeat: no-repeat;
- background-size: 100% 100%;
- //overflow-y: scroll;
- border-radius: 35px;
+ height: 85%;
+ width: 90%;
+ border-radius: 5px;
  border: 3px solid blue;
- 
+ padding: 5px;
+
 }
 
-#primaryContentDiv
+#navTabsArea
 {
- float: right;
- position: fixed;
- top: 15%;
- left: 25%;
- height: 80%;
- width: 70%;
- background-color: white;
- background-repeat: no-repeat;
- background-size: 100% 100%;
- border-radius: 35px;
- border: 3px solid blue;
-}
-
-#footerBarDiv
-{
- position: fixed;
- top: 100%;
+ position: absolute;
+ top: 0;
  left: 0;
- height: 5%;
+ height: 10%;
  width: 100%;
- background-color: rgb(20, 144, 221);
- color: black;
+ background-color: #111112;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
+}
+
+.navTabs ul
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+.navTabs li
+{
+ float: left;
+ list-style-type: none;
+ background-color: #111442;
+ color: white;
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.navTabs li a
+{
+ color: white;
+ text-decoration: none;
+ display: block;
+}
+
+
+.navTabs li:hover
+{
+ background-color:rgba(16, 25, 95,0.9);
+ color: skyBlue;
+}
+
+
+
+#contentArea
+{
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ overflow-y: scroll;
+}
+
+#contentArea h1
+{
+ text-align: center;
+}
+
+#contentArea h2
+{
+ margin-left: 20px;
 }

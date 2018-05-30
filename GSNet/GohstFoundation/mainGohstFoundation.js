@@ -2,36 +2,36 @@ function showAbout()
 {
  //alert("Showing about");
  showDiv("about");
- hideDiv("products");
+ hideDiv("projects");
  hideDiv("policies");
- hideDiv("partnerUp");
+ hideDiv("supportUs");
 }
 
-function showProducts()
+function showProjects()
 {
- //alert("Showing products");
+ //alert("Showing projects");
  hideDiv("about");
- showDiv("products");
+ showDiv("projects");
  hideDiv("policies");
- hideDiv("partnerUp");
+ hideDiv("supportUs");
 }
 
 function showPolicies()
 {
  //alert("Showing policies");
  hideDiv("about");
- hideDiv("products");
+ hideDiv("projects");
  showDiv("policies");
- hideDiv("partnerUp");
+ hideDiv("supportUs");
 }
 
-function showPartnerUp()
+function showSupportUs()
 {
  //alert("Showing partner up");
  hideDiv("about");
- hideDiv("products");
+ hideDiv("projects");
  hideDiv("policies");
- showDiv("partnerUp");
+ showDiv("supportUs");
 }
 
 

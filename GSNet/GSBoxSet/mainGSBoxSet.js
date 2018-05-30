@@ -1,6 +1,15 @@
+function showAbout()
+{
+ showDiv("about");
+ hideDiv("albums");
+ hideDiv("books");
+ hideDiv("software");
+ hideDiv("extras");
+}
+
 function showAlbums()
 {
- //alert("Showing albums");
+ hideDiv("about");
  showDiv("albums");
  hideDiv("books");
  hideDiv("software");
@@ -9,7 +18,7 @@ function showAlbums()
 
 function showBooks()
 {
- //alert("Showing bookss");
+ hideDiv("about");
  hideDiv("albums");
  showDiv("books");
  hideDiv("software");
@@ -18,7 +27,7 @@ function showBooks()
 
 function showSoftware()
 {
- //alert("Showing software");
+ hideDiv("about");
  hideDiv("albums");
  hideDiv("books");
  showDiv("software");
@@ -27,7 +36,7 @@ function showSoftware()
 
 function showExtras()
 {
- //alert("Showing software");
+ hideDiv("about");
  hideDiv("albums");
  hideDiv("books");
  hideDiv("software");
@@ -46,10 +55,3 @@ function hideDiv(div)
   var x = document.getElementById(div);
   x.style.display = "none";
 }
-
-document.getElementById("portfolioTabButton").addEventListener("click", function(){
-    showDiv("portfolioDiv");
-    hideDiv("classroomDiv");
-    hideDiv("dormDiv");
-    hideDiv("shopDiv");
-});
