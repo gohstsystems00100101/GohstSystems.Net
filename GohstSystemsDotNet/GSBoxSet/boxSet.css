@@ -1,0 +1,146 @@
+body
+{
+ color: white;	
+}
+
+li
+{
+ list-style-type: none;
+}
+
+
+#headerArea
+{
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+ background-color: #111112;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
+}
+
+#headerArea ul 
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+#headerArea li 
+{
+ float: left;
+ list-style-type: none;
+}
+
+#headerArea li a
+{
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+#headerArea li a:hover
+{
+ color: skyBlue;
+}
+
+#mainArea
+{
+ position: fixed;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;
+ background-color:black;
+ background-image: url("../CommonResources/Images/spaceBkgd.jpg"); 
+ 
+ background: url("../CommonResources/Images/spaceBkgd.jpg") cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#displayArea
+{
+ background-color:rgba(0, 0, 0,0.9);
+ position: absolute;
+ top: 5%;
+ left: 5%;
+ height: 85%;
+ width: 90%;
+ border-radius: 5px;
+ border: 3px solid blue;
+ padding: 5px;
+ 
+}
+
+#navTabsArea
+{
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+ background-color: #111112;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
+}
+
+.navTabs ul 
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+.navTabs li 
+{
+ float: left;
+ list-style-type: none;
+ background-color: #111442;
+ color: white;
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.navTabs li:hover
+{
+ background-color:rgba(16, 25, 95,0.9);
+ color: skyBlue;
+}
+
+#contentArea
+{
+ position: absolute;
+ top: 10%;
+ left: 0;
+ height: 85%;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ overflow-y: scroll;
+ padding: 10px;
+}
+
+#contentArea h1
+{
+ text-align: center;
+}
+
+#contentArea h2
+{
+ margin-left: 20px;
+}
+
+#albums, #books, #software
+{
+ display: none;
+}

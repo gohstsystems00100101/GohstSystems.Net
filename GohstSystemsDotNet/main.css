@@ -1,0 +1,154 @@
+#headerArea
+{
+ color: white;
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+ background-color: #111112;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
+}
+
+#headerArea ul 
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+#headerArea li 
+{
+ float: left;
+ list-style-type: none;
+  display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+}
+
+#headerArea li:hover
+{
+ color: skyBlue;
+ cursor: pointer;
+}
+
+#headerArea li a
+{
+ color: white;
+ text-decoration: none;
+}
+
+#headerArea li a:hover
+{
+ color: skyBlue;
+}
+
+#leftHeaderLinks
+{
+ float: left;
+}
+
+#rightHeaderLinks
+{
+ float: right;
+}
+
+
+#mainArea /*prev mainBodyDiv*/
+{
+ position: fixed;
+ top: 10%;
+ left: 0;
+ height: 90%;
+ width: 100%;
+ background-color: #748bfa;
+ background-image: url("file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/mainBkgd.jpg"); 
+ 
+ background: url("file:///C:/Users/User/Desktop/GSNet/CommonResources/Images/mainBkgd.jpg") repeat;
+        -webkit-background-size: repeat;
+        -moz-background-size: repeat;
+        -o-background-size: repeat;
+        background-size: repeat;
+		
+ background-color:rgba(255, 255, 255,0.9);
+ background-repeat:no-repeat;
+ background-size:cover;
+}
+
+#displayArea
+{
+ background-color:rgba(0, 0, 0,0.9);
+ color: white;
+ position: absolute;
+ top: 5%;
+ left: 5%;
+ height: 85%;
+ width: 90%;
+ border-radius: 5px;
+ border: 3px solid blue;
+ padding: 5px; 
+}
+
+#navTabsArea
+{
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 10%;
+ width: 100%;
+ background-color: #111112;
+ border-bottom: 4px solid #00f;
+ z-index: 3;
+}
+
+.navTabs ul 
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+.navTabs li 
+{
+ float: left;
+ list-style-type: none;
+ background-color: #111442;
+ color: white;
+ display: inline-block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.navTabs li:hover
+{
+ background-color:rgba(16, 25, 95,0.9);
+ color: skyBlue;
+}
+
+
+
+#contentArea
+{
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ overflow-y: scroll;
+}
+
+#contentArea h1
+{
+ text-align: center;
+}
+
+#contentArea h2
+{
+ margin-left: 20px;
+}
